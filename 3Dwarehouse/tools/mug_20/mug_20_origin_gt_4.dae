@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 18.0.16975</authoring_tool>
         </contributor>
-        <created>2018-05-23T23:30:55Z</created>
-        <modified>2018-05-23T23:30:55Z</modified>
+        <created>2018-05-24T23:36:28Z</created>
+        <modified>2018-05-24T23:36:28Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -27,11 +27,11 @@
         <visual_scene id="ID2">
             <node name="SketchUp">
                 <node name="skp_camera_Last_Saved_SketchUp_View">
-                    <matrix>-0.6458101 -0.669056 0.3678226 51.57109 0.7634981 -0.5659255 0.3111252 24.63731 -2.775558e-17 0.4817596 0.8763034 62.43549 0 0 0 1</matrix>
+                    <matrix>0.8047612 0.4123444 -0.427003 -15.42827 -0.5935987 0.5590287 -0.5789019 -68.51744 2.775558e-17 0.7193462 0.6946517 82.49852 0 0 0 1</matrix>
                     <instance_camera url="#ID1" />
                 </node>
                 <node id="ID3" name="group_0">
-                    <matrix>0.033 0 0 -4.126444 0 0.033 0 -2.675221 0 0 0.033 -0.1220546 0 0 0 1</matrix>
+                    <matrix>0.0231 0 0 -3.687751 0 0.0231 0 -2.675221 0 0 0.0231 -0.1220546 0 0 0 1</matrix>
                     <node id="ID4" name="group_1">
                         <matrix>1 0 0 44.3125 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
                         <node id="ID5" name="group_2">
