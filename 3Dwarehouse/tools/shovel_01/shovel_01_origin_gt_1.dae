@@ -4,8 +4,8 @@
         <contributor>
             <authoring_tool>SketchUp 18.0.16975</authoring_tool>
         </contributor>
-        <created>2018-05-23T23:39:31Z</created>
-        <modified>2018-05-23T23:39:31Z</modified>
+        <created>2018-05-26T00:04:45Z</created>
+        <modified>2018-05-26T00:04:45Z</modified>
         <unit meter="0.0254" name="inch" />
         <up_axis>Z_UP</up_axis>
     </asset>
@@ -27,11 +27,11 @@
         <visual_scene id="ID2">
             <node name="SketchUp">
                 <node name="skp_camera_Last_Saved_SketchUp_View">
-                    <matrix>-0.9785176 0.08865148 -0.1861298 5.88064 -0.2061635 -0.4207682 0.8834313 40.32359 0 0.9028261 0.4300058 31.12638 0 0 0 1</matrix>
+                    <matrix>-0.8515915 0.2816602 -0.4421079 -5.7172 -0.524206 -0.4575671 0.7182204 3.459076 0 0.843386 0.5373082 7.988542 0 0 0 1</matrix>
                     <instance_camera url="#ID1" />
                 </node>
                 <node id="ID3" name="instance_0">
-                    <matrix>0.7 0 0 8.431109 0 0.7 0 -0.8939041 0 0 0.7 -3.631331 0 0 0 1</matrix>
+                    <matrix>0.3031089 1.313717e-47 0.175 -0.6842582 0.175 9.714451e-17 -0.3031089 6.778419 -6.938894e-18 0.35 1.040834e-16 1.181408 0 0 0 1</matrix>
                     <instance_node url="#ID4" />
                 </node>
             </node>
@@ -6415,7 +6415,7 @@
         <geometry id="ID901">
             <mesh>
                 <source id="ID902">
-                    <float_array id="ID904" count="6">12.56244 42.64976 0.3293707 12.57265 42.64972 0.3294092</float_array>
+                    <float_array id="ID904" count="6">64.87922 42.64976 0.3293707 64.86901 42.64972 0.3294092</float_array>
                     <technique_common>
                         <accessor count="2" source="#ID904" stride="3">
                             <param name="X" type="float" />
@@ -6439,7 +6439,7 @@
         <geometry id="ID906">
             <mesh>
                 <source id="ID907">
-                    <float_array id="ID909" count="6">64.87922 42.64976 0.3293707 64.86901 42.64972 0.3294092</float_array>
+                    <float_array id="ID909" count="6">12.56244 42.64976 0.3293707 12.57265 42.64972 0.3294092</float_array>
                     <technique_common>
                         <accessor count="2" source="#ID909" stride="3">
                             <param name="X" type="float" />
