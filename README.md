@@ -1,7 +1,10 @@
 # simData
-sketchup 3D model from 3D warehouse, compatible with UMD affordance dataset
+Sketchup 3D models from 3D warehouse, compatible with UMD affordance dataset; This dataset is collected for simulation in Gazebo to automatically generate affordance annotations. 
 
 ------------------------------------
+## Usage
+please follow the instructions in [Image Saver](https://github.com/ivalab/simData_imgSaver)
+
 ## view in Gazebo (gui)
 
 1. put the .dae model under `~/.gazebo/models/MODEL_NAME/meshes/`
@@ -77,26 +80,6 @@ arg in spawn_model can be used to specify 6DOF of the position for placing
 ## connect ROS to Gazebo kinect
 please follow [this post](http://gazebosim.org/tutorials?tut=ros_depth_camera&cat=connect_ros#UseaGazeboDepthCamerawithROS)
 
-## change color of model for affordance ground truth
-1. go to [sketchup](https://www.sketchup.com/products/sketchup-free)
-2. insert the model 
-3. right click on the model part if needed and select the color to change
-4. resize if needed
-5. upload the model in order to conver a .dae format for free
-
-
-## sketchup tips
-### online version
-1. left side: paint, move (click on it to select scale)
-2. right side: instructor for tips
-3. right click for detailed component
-
-### pro version
-1. download the pro version (30 days, we should get it done much faster than that)
-2. [tools on surface](http://www.thesketchupessentials.com/toolsonsurface) to draw lines on surface to separate surfaces for painting
-3. you will need to install LibFredo (hint will pop out when installing tools on surface)
-4. to install extension, click on the windows->extension manager, restart sketchup 
-5. with pro version, you don't have to upload and download (such a waste of time); to name it, model.dae / model_gt.dae
-
-
+## contact
+If you encounter any questions, please contact me at fujenchu[at]gatech[dot]edu
 
