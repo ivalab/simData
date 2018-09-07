@@ -80,6 +80,10 @@ arg in spawn_model can be used to specify 6DOF of the position for placing
 ## connect ROS to Gazebo kinect
 please follow [this post](http://gazebosim.org/tutorials?tut=ros_depth_camera&cat=connect_ros#UseaGazeboDepthCamerawithROS)
 
+## download processed dataset 
+dataset with segmentation/classification/bounding box groundtruth in VOC2012 format 
+- [dropbox link](https://www.dropbox.com/s/9a3qoggh96qolj2/SimData_Gazebo.tar.gz?dl=0)
+
 ## contact
 If you encounter any questions, please contact me at fujenchu[at]gatech[dot]edu
 
