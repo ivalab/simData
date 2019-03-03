@@ -18,12 +18,12 @@ If you find it helpful for your research, please consider citing:
     
 ------------------------------------
 ## Usage
-please follow the instructions in [Image Saver](https://github.com/ivalab/simData_imgSaver)   
+Please follow the instructions in [Image Saver](https://github.com/ivalab/simData_imgSaver)   
 
 This repo contains sketchup 3D models from 3D warehouse, compatible with UMD affordance dataset. This dataset is collected for simulation in Gazebo to automatically generate affordance annotations. 
 
 ## Download processed dataset 
-if you simply want to use the dataset directly:
+If you simply want to use the dataset directly:
 - [dropbox link](https://www.dropbox.com/s/9a3qoggh96qolj2/SimData_Gazebo.tar.gz?dl=0)
 
 Note: dataset with segmentation/classification/bounding box groundtruth in VOC2012 format 
