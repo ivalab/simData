@@ -1,14 +1,32 @@
 # simData
-Sketchup 3D models from 3D warehouse, compatible with UMD affordance dataset; This dataset is collected for simulation in Gazebo to automatically generate affordance annotations. 
+This is the dataset of our RA-L work 'Learning Affordance Segmentation for Real-world Robotic Manipulation via Synthetic Images'. The detector jointly learns detection and affordance map prediction in an unsupervised manner via synthetic data. The original paper can be found [here](https://ieeexplore.ieee.org/abstract/document/8620534). The final version will be updated after publication process.
 
+If you find it helpful for your research, please consider citing:
+
+    @inproceedings{chu2019learning,
+      title = {Learning Affordance Segmentation for Real-world Robotic Manipulation via Synthetic Images},
+      author = {F. Chu and R. Xu and P. A. Vela},
+      journal = {IEEE Robotics and Automation Letters},
+      year = {2019},
+      volume = {4},
+      number = {2},
+      pages = {1140-1147},
+      DOI = {10.1109/LRA.2019.2894439},
+      ISSN = {2377-3766},
+      month = {April}
+    }
+    
 ------------------------------------
 ## Usage
-please follow the instructions in [Image Saver](https://github.com/ivalab/simData_imgSaver)
+please follow the instructions in [Image Saver](https://github.com/ivalab/simData_imgSaver)   
+
+This repo contains sketchup 3D models from 3D warehouse, compatible with UMD affordance dataset. This dataset is collected for simulation in Gazebo to automatically generate affordance annotations. 
 
 ## Download processed dataset 
-dataset with segmentation/classification/bounding box groundtruth in VOC2012 format 
+if you simply want to use the dataset directly:
 - [dropbox link](https://www.dropbox.com/s/9a3qoggh96qolj2/SimData_Gazebo.tar.gz?dl=0)
 
+Note: dataset with segmentation/classification/bounding box groundtruth in VOC2012 format 
 ## View in Gazebo (gui)
 
 1. put the .dae model under `~/.gazebo/models/MODEL_NAME/meshes/`
@@ -83,25 +101,6 @@ arg in spawn_model can be used to specify 6DOF of the position for placing
 
 ## Connect ROS to Gazebo kinect
 please follow [this post](http://gazebosim.org/tutorials?tut=ros_depth_camera&cat=connect_ros#UseaGazeboDepthCamerawithROS)
-
-
-## Citation
-This is the dataset of our RA-L work 'Learning Affordance Segmentation for Real-world Robotic Manipulation via Synthetic Images'. The detector jointly learns detection and affordance map prediction in an unsupervised manner via synthetic data. The original paper can be found [here](https://ieeexplore.ieee.org/abstract/document/8620534). The final version will be updated after publication process.
-
-If you find it helpful for your research, please consider citing:
-
-    @inproceedings{chu2019learning,
-      title = {Learning Affordance Segmentation for Real-world Robotic Manipulation via Synthetic Images},
-      author = {F. Chu and R. Xu and P. A. Vela},
-      journal = {IEEE Robotics and Automation Letters},
-      year = {2019},
-      volume = {4},
-      number = {2},
-      pages = {1140-1147},
-      DOI = {10.1109/LRA.2019.2894439},
-      ISSN = {2377-3766},
-      month = {April}
-    }
 
 
 ## Contact
