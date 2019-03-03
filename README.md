@@ -104,6 +104,6 @@ If you find it helpful for your research, please consider citing:
     }
 
 
-## contact
+## Contact
 If you encounter any questions, please contact me at fujenchu[at]gatech[dot]edu
 
