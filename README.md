@@ -1,6 +1,10 @@
 # simData
 This is the dataset of our RA-L work 'Learning Affordance Segmentation for Real-world Robotic Manipulation via Synthetic Images'. The detector jointly learns detection and affordance map prediction in an unsupervised manner via synthetic data. The original paper can be found [here](https://ieeexplore.ieee.org/abstract/document/8620534). The final version will be updated after publication process.
 
+<p align="center">
+<img src="https://github.com/ivalab/simData/blob/master/fig/simData.png" alt="drawing" width="800"/>
+</p>
+
 If you find it helpful for your research, please consider citing:
 
     @inproceedings{chu2019learning,
