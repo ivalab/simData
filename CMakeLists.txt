@@ -5,10 +5,12 @@ find_package(catkin REQUIRED)
 catkin_package()
 
 # create the appropriate files for tools
+set(BUILD_MODEL_DIR ${PROJECT_SOURCE_DIR}/warehouse)
+
 file(GLOB SUBDIRS ${PROJECT_SOURCE_DIR}/3Dwarehouse/tools/*)
 foreach(SUBDIR ${SUBDIRS})
     get_filename_component(MODEL_NAME ${SUBDIR} NAME)
-    set(MODEL_DIR ${CATKIN_PACKAGE_SHARE_DESTINATION}/models/${MODEL_NAME})
+    set(MODEL_DIR ${BUILD_MODEL_DIR}/models/${MODEL_NAME})
 
     # create the description.sdf for the model
     configure_file(

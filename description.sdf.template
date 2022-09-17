@@ -18,7 +18,7 @@
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>model://@PROJECT_NAME@/models/@MODEL_NAME@/mesh/@MODEL_NAME@_origin.dae</uri>
+                        <uri>file://@BUILD_MODEL_DIR@/models/@MODEL_NAME@/mesh/@MODEL_NAME@_origin.dae</uri>
                         <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
