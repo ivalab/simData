@@ -4,13 +4,6 @@ project(warehouse)
 find_package(catkin REQUIRED)
 catkin_package()
 
-## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
-#   # myfile1
-#   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
-
 # create the appropriate files for tools
 file(GLOB SUBDIRS ${PROJECT_SOURCE_DIR}/3Dwarehouse/tools/*)
 foreach(SUBDIR ${SUBDIRS})
@@ -23,10 +16,15 @@ foreach(SUBDIR ${SUBDIRS})
         ${MODEL_DIR}/sdf/description.sdf
     )
 
-    # move the mesh files
-    file(GLOB MESH ${SUBDIR}/*.dae)
-    file(COPY ${MESH} DESTINATION ${MODEL_DIR}/mesh)
+    # move mesh files
+    file(GLOB MESHES ${SUBDIR}/*.dae)
+    file(COPY ${MESHES} DESTINATION ${MODEL_DIR}/mesh)
 
-    # move the color files
-
+    # move texture folders into the mesh directory
+    file(GLOB TEXTURES ${SUBDIR}/*)
+    foreach(TEXTURE ${TEXTURES})
+        if(IS_DIRECTORY ${TEXTURE})
+            file(COPY ${TEXTURE} DESTINATION ${MODEL_DIR}/mesh)
+        endif()
+    endforeach()
 endforeach()
