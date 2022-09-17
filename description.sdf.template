@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+    <model name="@MODEL_NAME@_origin">
+        <static>true</static>
+        <link name="link">
+            <collision name="collision">
+                <surface>
+                    <contact>
+                        <collide_without_contact>true</collide_without_contact>
+                    </contact>
+                </surface>
+                <geometry>
+                    <box>
+                        <size>0.1 0.1 0.1</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://@PROJECT_NAME@/models/@MODEL_NAME@/mesh/@MODEL_NAME@_origin.dae</uri>
+                        <scale>1 1 1</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>
