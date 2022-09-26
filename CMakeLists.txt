@@ -1,16 +1,16 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(warehouse)
 
-find_package(catkin REQUIRED)
-catkin_package()
+find_package(catkin REQUIRED COMPONENTS gazebo_ros)
+catkin_package(DEPENDS gazebo_ros)
 
 # create the appropriate files for tools
-set(BUILD_MODEL_DIR ${PROJECT_SOURCE_DIR}/warehouse)
+set(BUILD_MODEL_DIR ${PROJECT_SOURCE_DIR}/models)
 
 file(GLOB SUBDIRS ${PROJECT_SOURCE_DIR}/3Dwarehouse/tools/*)
 foreach(SUBDIR ${SUBDIRS})
     get_filename_component(MODEL_NAME ${SUBDIR} NAME)
-    set(MODEL_DIR ${BUILD_MODEL_DIR}/models/${MODEL_NAME})
+    set(MODEL_DIR ${BUILD_MODEL_DIR}/${MODEL_NAME})
 
     # create the description.sdf for the model
     configure_file(
