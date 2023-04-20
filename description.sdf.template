@@ -1,20 +1,31 @@
 <?xml version='1.0'?>
 <sdf version="1.4">
     <model name="@MODEL_NAME@_origin">
-        <static>true</static>
+        <pose>0 0 0.5 0 0 0</pose>
         <link name="link">
             <collision name="collision">
-                <surface>
-                    <contact>
-                        <collide_without_contact>true</collide_without_contact>
-                    </contact>
-                </surface>
                 <geometry>
                     <box>
                         <size>0.1 0.1 0.1</size>
                     </box>
                 </geometry>
+                <surface>
+                    <friction>
+                        <ode>
+                            <mu>1</mu>
+                            <mu2>1</mu2>
+                        </ode>
+                    </friction>
+                </surface>
             </collision>
+            <inertial>
+                <mass>1</mass>
+                <inertia>
+                    <ixx>1</ixx>
+                    <iyy>1</iyy>
+                    <izz>1</izz>
+                </inertia>
+            </inertial>
             <visual name="visual">
                 <geometry>
                     <mesh>
