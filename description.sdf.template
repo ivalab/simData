@@ -5,9 +5,10 @@
         <link name="link">
             <collision name="collision">
                 <geometry>
-                    <box>
-                        <size>0.1 0.1 0.1</size>
-                    </box>
+                    <mesh>
+                        <uri>model://@MODEL_NAME@/mesh/@MODEL_NAME@_origin.dae</uri>
+                        <scale>1 1 1</scale>
+                    </mesh>
                 </geometry>
                 <surface>
                     <friction>
